@@ -1,8 +1,6 @@
-# PriceComparator - Accesa Java Internship 2025
+# PriceComparator 
 
 This is a backend application written in **vanilla Java** for the **Accesa Java Internship 2025 Coding Challenge**. It simulates a real-world price comparator used to analyze and manage product pricing across multiple retail chains in Romania, such as Lidl, Kaufland, and Profi.
-
----
 
 ## What it does
 
@@ -13,8 +11,6 @@ The project processes CSV datasets of supermarket products and discounts, allowi
 - View the best current discounts sorted by percentage.
 - Simulate a shopping basket (add/remove/clear items).
 - Make informed purchasing decisions by comparing "value per unit".
-
----
 
 ## How it was made
 
@@ -31,7 +27,7 @@ The project processes CSV datasets of supermarket products and discounts, allowi
 - `Service` – Handles all business logic and user interactions.
 - `Main` – Entrypoint that ties everything together.
 
----
+
 
 ## Features Implemented
 
@@ -56,9 +52,22 @@ This project successfully implements all **core** and several **bonus** features
 - `percentageChange` tracks the % of the price difference between two weeks (e.g., price increase or decrease between 2025-05-01 and 2025-05-08).
 
 ## Video Demonstration
-// video
+
+https://youtu.be/PAGqwAHaKto
 
 ## Assumptions & Simplifications
 - Only the latest version of a product (latest CSV date) is kept
 - Discounts apply only if within `start_date` and `end_date`
 - No frontend or DB persistence; all data is in-memory.
+
+## Lessons Learned
+- Clean separation of concerns via classes (`Product`, `Service`, `Parser`)
+- Managing input/output with proper error handling
+- Realistic handling of duplicate datasets and product merging
+- Building fully working features without a framework
+
+## How to Run
+- Clone the repository
+- Open project in IntelliJ (or any Java IDE)
+- Make sure to include the `OpenCSV` library and `Apache Commons Lang`
+- Run `Main.java`
