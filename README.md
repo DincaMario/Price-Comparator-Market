@@ -53,7 +53,7 @@ This project successfully implements all **core** and several **bonus** features
 
 ## Video Demonstration
 
-https://youtu.be/PAGqwAHaKto
+[https://youtu.be/PAGqwAHaKto](https://www.youtube.com/watch?v=sMcuJw4EPiY)
 
 ## Assumptions & Simplifications
 - Only the latest version of a product (latest CSV date) is kept
